@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <title>Notification Bell</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>Notification Bell</h1>
+        <p>Click the bell to see notifications</p>
+      </header>
+
+      <section class="notification-wrapper">
+        <button class="bell-btn" id="bellBtn">
+          <i class="fa-solid fa-bell"></i>
+          <span class="badge" id="badge">3</span>
+        </button>
+
+        <div class="notification-dropdown" id="dropdown">
+          <header class="dropdown-header">
+            <h3>Notifications</h3>
+            <button class="mark-read" id="markRead">Mark all as read</button>
+          </header>
+
+          <div class="notifications-list" id="notificationsList">
+            <div class="notification-item unread">
+              <div class="notification-content">
+                <p class="notification-title">New message received</p>
+                <p class="notification-time">2 minutes ago</p>
+              </div>
+            </div>
+
+            <div class="notification-item unread">
+              <div class="notification-content">
+                <p class="notification-title">You have a new follower</p>
+                <p class="notification-time">1 hour ago</p>
+              </div>
+            </div>
+
+            <div class="notification-item unread">
+              <div class="notification-content">
+                <p class="notification-title">Order shipped</p>
+                <p class="notification-time">3 hours ago</p>
+              </div>
+            </div>
+            <div class="notification-item">
+              <div class="notification-content">
+                <p class="notification-title">Payment received</p>
+                <p class="notification-time">Yesterday</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
